@@ -16,11 +16,36 @@
 
 <body>
   <section id="main">
-    <nav>
+    <div class="topnav" id="myTopnav">
+
+      <div class="listed">
+        <a href="#" class="logo">
+          <img style=" width: 90px; height: 50px; " src="logo.png" alt="image">
+        </a>
+        <a href="#" class="services">Services</a>
+        <a class="listed" href="#">Product</a>
+        <a class="listed" href="#">Technology</a>
+        <a class="listed" href="#contact">client</a>
+        <a class="listed" href="#about">About<i class="fa fa-fw fa-chevron-down"></i></a>
+        <a class="listed" href="#">Partner<i class="fa fa-fw fa-chevron-down"></i></a>
+      </div>
+
+
+      <a class="active hey" href="#"><i class="fa fa-home"></i></a>
+      <a href="#" class="hey"><i class="fa fa-fw fa-envelope"></i></a>
+      <a href="#" class="hey"><i class="fa fa-fw fa-random"></i></a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i style="margin-right: 20px;" class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+    <!-- <nav>
       <a href="#" class="logo">
         <img style=" border-radius: 30%;" src="logo.png" alt="">
       </a>
-      <!---menu------->
+      
       <ul class="menu">
         <li><a href="#">Services</a></li>
         <li><a href="#">Product</a></li>
@@ -33,7 +58,7 @@
       <a href="#" class="hey"><i class="fa fa-fw fa-envelope"></i></a>
       <a href="#" class="hey"><i class="fa fa-fw fa-random"></i></a>
 
-    </nav>
+    </nav> -->
 
     <!--Content------->
     <div class="content">
@@ -114,7 +139,16 @@
     </div>
 
   </section>
-
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 
 
 

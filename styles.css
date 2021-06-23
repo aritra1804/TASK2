@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+ body{
+   margin: 0;
+   padding: 0;
+   font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+scroll-behavior: smooth;
+ }
+*{
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 10px rgba(0,0,0,0.02);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+nav ul{
+  display: flex;
+}
+nav ul li a{
+  height: 40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #444444;
+  letter-spacing: 1px;
+}
+
+.hey{
+  letter-spacing: 0;
+}
+
+nav ul li a:hover{
+  background-color: #FF575F;
+  box-shadow: 5px 10px 30px rgba(64,198,196,0.3);
+  transition: all ease 0.2s;
+
+}
+
+.content{
+  padding-top: 60px;
+}
+
+.model img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.model{
+  width: 500px;
+  height: 500px;
+}
+
+.content{
+  width: 90%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+}
+
+.main-text{
+  width: 500px;
+}
+.head1{
+  height: 100px;
+width: 545px;
+left: 0px;
+top: 74px;
+border-radius: nullpx;
+font-family: Roboto;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 64px;
+letter-spacing: 0em;
+text-align: left;
+font-weight:bold;
+color: #1F2E35;
+margin-bottom: 0;
+}
+
+.head2{
+  color:#FF464F;
+  height: 100px;
+  width: 545px;
+  left: 0px;
+
+margin-top: 5;
+  border-radius: nullpx;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight:bold;
+}
+
+.para1{
+  position: absolute;
+width: 500px;
+height: 58px;
+left: 100px;
+top: 320px;
+margin-top: 80px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 29px;
+
+color: #30444E;
+
+justify-content: space-around;
+}
+
+.btn1{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 12px 32px;
+
+position: absolute;
+width: 161px;
+height: 53px;
+left: 80px;
+top: 470px;
+
+background: #EE4248;
+box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+border-radius: 4px;
+color: #FFFFFF;
+}
+
+#main-2{
+  position: absolute;
+width: 100%;
+height: 500px;
+left: 0px;
+top: 751px;
+padding-top: 30px;
+
+background: #F7F7F7;
+}
+
+.model-2 img{
+
+position: absolute;
+width: 452.94px;
+height: 472px;
+left: 193px;
+top: -42px;
+
+}
+
+.text-2 h1{
+  position: absolute;
+width: 454px;
+height: 86px;
+left: 728px;
+top: 57px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 133.69%;
+/* or 43px */
+
+
+color: #1F2E35;
+
+}
+
+.text-2 p{
+  position: absolute;
+width: 520px;
+height: 270px;
+left: 728px;
+top: 167px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 150%;
+/* or 27px */
+
+
+color: #30444E;
+
+}
+
+#cards{
+
+position: absolute;
+width: 1126px;
+height: 459px;
+left: 157px;
+top: 1347px;
+
+}
+
+.Product{
+  position: absolute;
+  width: 100%;
+  height: 43px;
+  left: 62px;
+  top: 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 133.69%;
+  /* identical to box height, or 43px */
+
+  text-align: center;
+
+  color: #1F2E35;
+}
+
+
+
+.grid{
+  margin: 80px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+  align-items: center;
+}
+
+.grid > article{
+  border: none;
+  text-align: left;
+  width: 250px;
+  transition: transform .3s;
+}
+
+.grid >article:hover{
+  transform: translate(5px);
+  box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+
+.product-text{
+  padding: 0 20px 20px;
+}
+
+.heading3{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 133.69%;
+/* or 37px */
+
+
+color: #EE4248;
+}
+
+.btn{
+
+background: #EE4248;
+box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+border-radius: 4px;
+color: white;
+}
+
+
+@media (max-width:768px){
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+
+@media (max-width:500px){
+ .grid{
+   grid-template-columns: repeat(1,1fr);
+ }
+ .grid > article{
+   text-align:center;
+ }
+}
